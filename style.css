@@ -178,7 +178,7 @@ li {
 
 .menu-icon {
     display: none;
-    max-width: 90px;
+    width: 50px;
 }
 .menu-icon img, .menu-close-icon img{   
     width: 100%;
@@ -187,6 +187,7 @@ li {
 .menu-close-icon {
     display: none;
     max-width: 40px;
+
 }
 
 .nav-container {
@@ -247,6 +248,7 @@ li {
 
     .expanded {
         width: 50% !important;
+        padding: 10px;
     }
 
     #topnav {
@@ -256,6 +258,7 @@ li {
         /* position: relative; */
         display: block;
         position: fixed;
+        /* padding: 10px; */
         z-index: 2;
         right: 0;
         top: 0;
@@ -282,6 +285,11 @@ li {
         text-align: left;
         margin-top: 20px;
         margin-left: 20px;
+    }
+}
+@media (max-width:500px) {
+    .expanded{
+        width: 75% ! important;
     }
 }
 /* navbar end */
@@ -1036,7 +1044,7 @@ footer{
 .about-hero-section{
     padding-block: 5%;
     background-color: var(--blue-bg);
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 .mission-section{
@@ -1116,7 +1124,7 @@ footer{
     height: 100%;
     object-fit: cover;
 }
-.about-content{
+.about-wrapper .about-content{
     width: 40%;
 }
 .about-content p{
@@ -1148,6 +1156,7 @@ footer{
 .service-container .img-wrapper h1{
     font-size: 2rem;
     color: var(--white-font);
+    text-align: center;
 }
 .service-container p{
     width: 80%;
