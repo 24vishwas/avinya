@@ -632,6 +632,12 @@ li {
 .why-choose-section .hero-container{
     gap: 50px;
 }
+@media (max-width:500px) {
+    .why-choose-section .why-choose{
+        flex-direction: column;
+        text-align: center;
+    }
+}
 /* why-choose-section end */
 
 /* project-section */
