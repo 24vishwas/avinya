@@ -509,7 +509,7 @@ li {
     display: flex;
     flex-wrap:wrap ;
     gap: 50px;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 20px;
 }
 .service{
@@ -835,19 +835,21 @@ li {
 
 .cta{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    padding-block: 30px;
+    /* justify-content: center; */
 }
 .cta h1{
     position: relative;
     text-align: left;
-    width: 50%;
+    width: 90%;
+    margin-top: 20px;
 }
-.cta div{
+/* .cta div{
     display: flex;
     flex-direction: column;
     gap: 30px;
-}
+} */
 .cta h1::after{
     position: absolute;
     top: -10px;
@@ -873,7 +875,7 @@ li {
         height: 0;
     }
     .cta div{
-        width: 90%;
+        /* width: 90%; */
         flex-wrap: wrap;
         flex-direction: row;
         align-items: center;
@@ -1072,6 +1074,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-direction: column;
 }
 .mission-container .img-wrapper img{
     width: 100%;
@@ -1079,7 +1082,7 @@ footer{
     object-fit: cover;
 }
 .mission-container .img-wrapper{
-    width: 40%;
+    width: 100%;
 }
 .mission-content{
     width: 40%;
@@ -1115,7 +1118,7 @@ footer{
         text-align: center;
     }
     .mission-container .img-wrapper{
-        width: 50%;
+        /* width: 50%; */
     }
 }
 /* mission section end */
@@ -1143,6 +1146,17 @@ footer{
     line-height: 30px;
     margin-top: 30px;
     text-align: justify;
+}
+@media (max-width:992px) {
+    .about-wrapper{
+        flex-direction: column;
+    }
+    .about-wrapper .about-content{
+        width: 100%;
+    }
+    .about-wrapper .img-wrapper{
+        width: 60%;
+    }
 }
 /* about page end */
 

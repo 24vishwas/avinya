@@ -102,32 +102,52 @@
             <button id="next" class="control next" aria-label="next"></button>
         </div>
     </section>
-    <section class="banner-section">
+    <section class="banner-section" id="contact">
         <div class="banner-container container">
             <div class="banner cta">
                 <h1>Book A Free Consultation</h1>
-                <div>
-                    <button class="primary-btn "><a href="#">Your Email</a></button> 
-                    <button class="primary-btn "><a href="#">Book my free meeting</a></button> 
-                </div>
+                <form action="#" class="contactform">
+                    <div class="row">
+                        <div>
+                            <label for="name" aria-required="true">Full Name*</label>
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div>
+                            <label for="email" aria-required="true">Your Email*</label>
+                            <input type="email" name="email" required placeholder="example@gmail.com">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <label for="company" aria-required="true">Company*</label>
+                            <input type="email" name="email" required placeholder="Name of the Company">
+                        </div>
+                        <div>
+                            <label for="email" aria-required="true">Subject*</label>
+                            <input type="email" name="email" required placeholder="How Can We Help">
+                        </div>
+                    </div>
+                    <div >
+                        <label for="message" aria-required="true">Message*</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    </div>
+                    <button class="primary-btn " type="submit"><a href="#">Book Now</a></button>
+                    <button class="primary-btn "><a href="mailto:info@avinyatechinnovators.in">Book my free meeting</a></button>
+                </form>
             </div>
         </div>
     </section>
     <footer>
         <div class="footer-container ">
             <ul class="footer-wrapper">
-                <li class="footer-item about">
-                    <div class="img-wrapper">
-                        <img src="./assets/Logo-1.png" alt="image">
-                    </div>
-                </li>
+                
                 <li class="footer-item">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="./index.html/#services">Services</a></li>
-                        <li><a href="index.html/#contact">Contact</a></li>
+                        <li><a href="./index.html/#contact">Contact</a></li>
                 
                     </ul>
                 </li>
@@ -135,26 +155,28 @@
                 <li class="footer-item">
                     <h3>Contact</h3>
                     <ul>
-                        <li><a href=""><img src="./assets/locatioin-1.png" alt="image">123 Tech Street, city </a></li>
-                        <li><a href="tel:+91 9945007030 "><img src="./assets/phone-1.png" alt="image"> +91 9945007030 </a></li>
-                        <li><a href="mailto:"><img src="./assets/mail-1.png" alt="image"> info@gmai.com</a></li>
+                        <li><a href=""><img src="./assets/locatioin-1.png" alt="image">667,     Shrinidhi Plaza, 
+                             Nrupatunga Rd, <br> M-Block, Kuvempu Nagara, 
+                            <br> Mysuru, 570023</a></li>
+                        <li><a href="tel:918296359759 "><img src="./assets/phone-1.png" alt="image"> +91 8296359759 </a></li>
+                        <li><a href="mailto:info@avinyatechinnovators.in"><img src="./assets/mail-1.png" alt="image"> info@avinyatechinnovators.in</a></li>
                         
                         <!-- <li><a href="">Gallery</a></li> -->
                     </ul>
                 </li>
                 <li class="footer-item newsletter"> 
-                    <h3>Sign up for News and updates</h3>
-                    <input type="email" name="email" placeholder="E-mail Address" id="email">
+                    <h3>Social Media Links</h3>
+                    
                     <div class="logo-wrapper">
                         <img src="./assets/Fb.png" alt="fb">
-                        <img src="./assets/Fb.png" alt="fb">
-                        <img src="./assets/Fb.png" alt="fb">
-                        <img src="./assets/Fb.png" alt="fb">
+                        <img src="./assets/Insta.png" alt="Instagram">
+                        <img src="./assets/Twitter.png" alt="twitter">
+                        <img src="./assets/LinkedIn.png" alt="LinkedIn">
                     </div>
                 </li>
                 <li class="footer-item"> 
                     <div class="footer-btn">
-                        <a href="#"><img src="./assets/Chat.png" alt="image"></a>
+                        <!-- <a href="#"><img src="./assets/Chat.png" alt="image"></a> -->
                         <a href="#navbar"><img src="./assets/backtohome.png" alt="image"></a>
                     </div>
                 </li>
