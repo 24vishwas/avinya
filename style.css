@@ -8,7 +8,7 @@ html {
     --white-font:#FFFFFF;
     --orange-font:#DD7F24;
     --black-font:black;
-    --gray-font:#A1A1A1;
+    --gray-font:#5d5d5d;
     --bg-gredient:linear-gradient(225.83deg, #00AAFF 11.34%, #96DCFF 35.49%, #0878FF 69.01%, #0878FF 98.59%);
     --bg-gredient1:linear-gradient(95.28deg, rgba(133, 214, 255, 0.8) 2.8%, #28B7FF 97.16%);
 
@@ -585,7 +585,7 @@ li {
     margin-inline: auto;
     border: 18px solid #89D8FF;
     border-radius: 50px;
-    height: 400px;
+    min-height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -997,7 +997,7 @@ footer{
     }
     .footer-item{
         width: 100%;
-        text-align: center;
+        /* text-align: center; */
     }
     .about{
         width: 70%;
@@ -1093,9 +1093,10 @@ footer{
     display: flex;
     gap: 10px;
     margin-block: 20px;
-    color: var(--black-font);
-    align-items: center;
-    text-align: left;
+    color: var(--gray-font);
+    align-items: flex-start;
+    text-align: justify;
+
 }
 .mission-content li img{
     width: 20px;
@@ -1185,6 +1186,45 @@ footer{
         width: 100%;
     }
     .service-container .img-wrapper{
+        width: 100%;
+    }
+}
+
+/* form */
+.contactform{
+    width: 90%;
+    margin-inline: auto;
+}
+.contactform .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contactform .row div{
+    width: 45%;
+    margin-block: 20px;
+}
+.contactform label{
+    font-weight: 700;
+}
+.contactform input,textarea{
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px 20px;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    border-radius: 10px;
+}
+.contactform button{
+    margin-top: 20px;
+    height: 50px;
+}
+@media (max-width:600px) {
+    .contactform .row{
+        flex-direction: column;
+    }
+    .contactform .row div{
         width: 100%;
     }
 }
