@@ -15,7 +15,7 @@ function checkOrientation() {
 
     } else {}
 }
-
+/*
 var slider1 = document.getElementById('slider1'),
     sliderItems = document.getElementById('slides'),
     prev = document.getElementById('prev'),
@@ -162,3 +162,4 @@ function slide(wrapper, items, prev, next) {
 }
 
 slide(slider1, sliderItems, prev, next);
+*/
