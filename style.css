@@ -459,6 +459,7 @@ li {
     font-size: 18px;
     margin-top: 10px;
     color: var(--gray-font);
+    text-align: justify;
 }
 
 @media (max-width:1024px) {
