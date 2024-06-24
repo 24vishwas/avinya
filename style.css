@@ -464,7 +464,8 @@ li {
 
 @media (max-width:1024px) {
     .about-container .img-wrapper{
-        width: 100%;
+        width: 80%;
+        margin-inline: auto;
     }
     
 }
