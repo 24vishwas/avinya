@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Avinya Tech Innovators</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
@@ -240,32 +241,34 @@
         <div class="banner-container container">
             <div class="banner cta">
                 <h1>Book A Free Consultation</h1>
-                <form action="#" class="contactform">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contactform">
                     <div class="row">
                         <div>
+                            <input type="hidden" name="access_key" value="675df614-26fe-48d7-8837-bc8af30b7cfb">
                             <label for="name" aria-required="true">Full Name*</label>
                             <input type="text" name="name" placeholder="Your Name" required>
                         </div>
                         <div>
                             <label for="email" aria-required="true">Your Email*</label>
-                            <input type="email" name="email" required placeholder="example@gmail.com">
+                            <input type="email" name="email" required placeholder="example@gmail.com" >
                         </div>
                     </div>
                     <div class="row">
                         <div>
                             <label for="company" aria-required="true">Company*</label>
-                            <input type="email" name="email" required placeholder="Name of the Company">
+                            <input type="text" name="company"  placeholder="Name of the Company">
                         </div>
                         <div>
-                            <label for="email" aria-required="true">Subject*</label>
-                            <input type="email" name="email" required placeholder="How Can We Help">
+                            <label for="subject" aria-required="true">Subject*</label>
+                            <input type="text" name="subject" required placeholder="How Can We Help">
                         </div>
                     </div>
                     <div >
                         <label for="message" aria-required="true">Message*</label>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                        <textarea name="message" id="message" required cols="30" rows="10" placeholder="Your Message"></textarea>
                     </div>
-                    <button class="primary-btn " type="submit"><a href="#">Submit</a></button>
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <button class="primary-btn " type="submit">Submit</button>
                     
                 </form>
             </div>
