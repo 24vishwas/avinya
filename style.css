@@ -444,7 +444,7 @@ li {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 20px;
-    width: 90%;
+    width: 550px;
     margin-block: 20px;
     border: 1px solid var(--gray-font);
     padding: 20px;
@@ -613,6 +613,16 @@ li {
 .why-choose-section{
     margin-block: 10%;
     overflow: hidden;
+}
+.why-content{
+    width: 100%;
+}
+.why-choose-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* gap: 20px; */
 }
 .why-choose-section .why-choose{
     border: none;
